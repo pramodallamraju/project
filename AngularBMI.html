@@ -10,13 +10,15 @@
 
 <div ng-app="myBMI" ng-controller = "mybmiCtrl">
 		My Weight: <input type="int" ng-model = "mw" placeholder = "enter weight in kg">
-		My Height: <input type="int" ng-model = "mh" placeholder = "enter height in metres"> <br>
-		<h3>
-		My BMI is: {{mw/(mh*mh)}}
-		</h3>
-
+		My Height: <input type="int" ng-model = "mh" placeholder = "enter height in metres"> 
+        <br>
 		
+        <h3> Your BMI is: {{bmi()}}  and your current condition is: {{bmiMessage()}} </h3> 	
+        <button ng-click="clear()">Clear</button>	
 </div>
+
+
+<!--
 <hr>
 <div>
 	<h3>
@@ -24,6 +26,7 @@
 	</h3>
 	<button ng-click="enterName()"> Enter your name</button>
 </div>
+-->
 
 
 </body>
